@@ -1,0 +1,45 @@
+.nav{
+    background-color: #2C3E50;
+    position: fixed;
+}
+.right-side{
+    width: 50%;
+    position:absolute;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+ul li{
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+ul li:hover{
+    background-color:#1ABC9C;
+}
+@media only screen and (max-width: 768px) {
+    .right-side {
+      display: none;
+    }
+    .menu{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    right: 5%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+cursor: pointer;    
+}
+  }
+  

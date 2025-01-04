@@ -1,0 +1,50 @@
+.Input {
+    width: 100%; 
+    border: none;
+    border-bottom: 2px solid #EFF0F3;
+    outline: none; 
+    padding: 5px 0; 
+    transition: border-color 0.3s ease; 
+  }
+  
+  .Input:focus {
+    border-bottom: 2px solid #EFF0F3; 
+  }
+  button{
+    background-color: #1ABC9C;
+    border-style: none;
+    
+  }
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    position: relative;
+    width: 25%;
+    margin: auto;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid black;
+    margin: 0 10px; 
+}
+
+.star {
+    padding: 0 10px;
+}
+@media screen and (max-width:768px) {
+  .separator{
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .separator{
+    width: 75%;
+  }
+  
+}

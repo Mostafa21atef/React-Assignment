@@ -1,0 +1,38 @@
+.home{
+    background-color: #1ABC9C;
+    overflow-x: hidden;
+}
+.home img{
+    width: 300px;
+    margin: auto;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 3px solid white;
+    margin: 0 10px; 
+}
+.star {
+    padding: 0 10px;
+}
+@media screen and (max-width:768px) {
+  .separator{
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .separator{
+    width: 75%;
+  }
+  
+}
